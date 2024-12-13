@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>EBAC Registro</h1>
+        <form id="form-registro" onsubmit="validarFormulario(event)">
+            <input type="email" id="email" required placeholder="E-mail">
+            <input type="password" id="password" required placeholder="Senha">
+            <input type="text" id="register-name" required placeholder="Nome">
+            <input type="number" id="telefone" required placeholder="Número de Telefone">
+            <input type="number" id="cpf" required placeholder="CPF">
+            <p class="error-message">
+                O CPF precisa ser maior do que o número de telefone!
+            </p>
+            <button type="submit" id="btn-register">Registrar</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
